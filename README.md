@@ -17,4 +17,5 @@ Desafio de programação LAVID/FUZE.cc SELEÇÃO BOLSISTAS 2021;
 *Em produção*
 
 *Splashscreen
-<img src="Screenshot_1613622538.png" alt="drawing" width="300"/> <img src="Screenshot_1613622538.png" alt="drawing" width="300"/>
+
+<img src="media/Screenshot_1613622538.png" alt="drawing" width="300"/> 
