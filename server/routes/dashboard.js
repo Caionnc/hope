@@ -9,7 +9,7 @@ router.get("/",authorization, async (req, res) => {
         
         // The req.user has the payload
         //res.json(req.user);
-        const user = await pool.query("SELECT user_name FROM users WHERE user_id = $1", [req.user]);
+        const user = await pool.query("SELECT user_name FROM users WHERE user_id = $1", [req.user]); // se quiser o payload, basta colocar *
         res.json(user.rows[0]);
     } catch (error) {
         console.error(err.message);
