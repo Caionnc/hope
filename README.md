@@ -21,7 +21,9 @@ Desafio de programação LAVID/FUZE.cc SELEÇÃO BOLSISTAS 2021;
 <img src="media/Screenshot_1613622538.png" alt="drawing" width="300"/> 
 
 * Animation
-![](hopeproject-ifjUR6WbHLM2j3kS7Z.gif)
+![Alt Text](https://media.giphy.com/media/ifjUR6WbHLM2j3kS7Z/giphy.gif)
+
+
 
 https://media.giphy.com/media/ifjUR6WbHLM2j3kS7Z/giphy.gif
 
