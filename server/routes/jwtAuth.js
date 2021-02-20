@@ -3,6 +3,7 @@ const pool = require("../db");
 const bcrypt = require("bcrypt");
 const jwtGenerator = require("../utils/jwtGenerator");
 const validInfo = require("../middleware/validInfo");
+const authorization = require("../middleware/authorization");
 
 
 
@@ -31,7 +32,6 @@ router.post("/register", validInfo, async (req,res) => {
         let newUser = await pool.query("INSERT INTO users(user_name, user_email, user_password) VALUES ($1,$2,$3) RETURNING *", 
             [name, email, bcryptPassword]);
         
-        //res.json(newUser.rows[0]);
         //5. Generate our JWT Token
 
         const jwtToken = jwtGenerator(newUser.rows[0].user_id);
@@ -60,7 +60,6 @@ router.post("/login", validInfo, async (req,res) => {
         }
         //3. Checar se as senhas batem
         const validPassword = await bcrypt.compare(password, user.rows[0].user_password);
-        //console.log(validPassword); // Testando return
         
         if(!validPassword){
             return res.status(401).json("Password or Email is incorrect");
@@ -70,6 +69,16 @@ router.post("/login", validInfo, async (req,res) => {
         const jwtToken = jwtGenerator(user.rows[0].user_id);
 
         res.json({ jwtToken });
+    }catch(err){
+        console.error(err.message);
+        res.status(500).send("Server error");
+    }
+});
+
+//Is verify ROUTER
+router.get("/verify", authorization ,async (req,res) => {
+    try{
+        res.json(true);
     }catch(err){
         console.error(err.message);
         res.status(500).send("Server error");
