@@ -7,17 +7,19 @@ import {Router, Scene} from 'react-native-router-flux';
     Components for Router
 */
 import LoadingScreen from './screens/LoadingScreen';
+import LoginScreen from './screens/LoginScreen';
 
 class App extends Component {
   render() {
     return (
       <Router>
           <Scene key='root'>
-            <Scene key='loading' component={LoadingScreen} initial={true} hideNavBar={true}></Scene>
+            <Scene key='login' component={LoginScreen} initial={true} hideNavBar={true}></Scene>
           </Scene>
       </Router>
     );
   }
 }
 
+//<Scene key='loading' component={LoadingScreen} initial={false} hideNavBar={true}></Scene>
 export default App;
