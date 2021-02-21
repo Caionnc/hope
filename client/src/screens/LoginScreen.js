@@ -30,12 +30,12 @@ class LoginScreen extends Component{
                     </TextInput>
                 
 
-                    <TouchableOpacity>
-                        <Text >Entrar</Text>
+                    <TouchableOpacity style = {styles.btnEntrar}>
+                        <Text style = {styles.btnEntrarText}>Entrar</Text>
                     </TouchableOpacity>
 
-                    <TouchableOpacity>
-                        <Text>Criar nova conta</Text>
+                    <TouchableOpacity style = {styles.btnCriarNovaConta}>
+                        <Text style = {styles.btnCriarNovaContaText}>Criar nova conta</Text>
                     </TouchableOpacity>
                 </View>
             
@@ -49,12 +49,6 @@ class LoginScreen extends Component{
 export default LoginScreen;
 
 const styles = StyleSheet.create({
-    container: {
-        flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        width: '90%',
-    },
     background: {
         flex: 1,
         backgroundColor: '#4406a1',
@@ -64,7 +58,18 @@ const styles = StyleSheet.create({
     containerLogo: {
         flex: 1,
         justifyContent: 'center',
-        
+        marginTop: 65,
+    },
+    container: {
+        flex: 0,
+        backgroundColor: "#FFF",
+        justifyContent: 'center',
+        alignItems: 'center',
+        marginBottom: 10,
+        paddingTop: 20,
+        paddingBottom: 20,
+        width: '90%',
+        borderRadius: 7,
     },
     input: {
         backgroundColor: '#FFF',
@@ -74,6 +79,32 @@ const styles = StyleSheet.create({
         fontSize: 17,
         borderRadius: 7,
         padding: 10,
+    },
+    btnEntrar: {
+        flex: 0,
+        backgroundColor: '#4406a1',
+        width: '90%',
+        padding: 10,
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 7
+    },
+    btnEntrarText: {
+        color: '#F5FFFA',
+        fontSize: 18,
+    },
+    btnCriarNovaConta: {
+        flex: 0,
+        color: '#FFF',
+        width: '90%',
+        alignItems: 'center',
+        justifyContent: 'center',
+        borderRadius: 7,
+    },
+    btnCriarNovaContaText: {
+        marginTop: 12,
+        color: '#4406a1',
+        fontSize: 15,
     }
   });
   
