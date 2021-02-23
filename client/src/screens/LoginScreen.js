@@ -4,8 +4,9 @@ import {View, Image, TextInput, TouchableOpacity, Text, StyleSheet} from 'react-
 //Import de imagens
 import hopehandslogo from '../images/hopelhandslogo.png';
 
-//ARQUIVO SUBSTITUIDO POR LOGIN SCREEN AVOIDING VIEW
-
+/*******************************************************
+ARQUIVO SUBSTITUIDO POR LOGIN SCREEN AVOIDING VIEW
+********************************************************/
 class LoginScreen extends Component{
     render() {
         return(

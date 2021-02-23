@@ -1,5 +1,10 @@
 import React, {Component} from 'react';
-import {View, StyleSheet, Animated, Image} from 'react-native';
+import {
+  View, 
+  StyleSheet, 
+  Animated, 
+  Image
+} from 'react-native';
 
 import hopelogo from '../images/hopelogo.png';
 

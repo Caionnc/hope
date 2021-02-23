@@ -9,13 +9,15 @@ import {Router, Scene} from 'react-native-router-flux';
 import LoadingScreen from './screens/LoadingScreen';
 import LoginScreen from './screens/LoginScreen';
 import LoginScreenAvoidingView from './screens/LoginScreenAvoidingView';
+import RegisterScreen from './screens/RegisterScreen';
 
 class App extends Component {
   render() {
     return (
       <Router>
           <Scene key='root'>
-            <Scene key='login' component={LoginScreenAvoidingView} initial={true} hideNavBar={true}></Scene>
+            <Scene key='login' component={RegisterScreen} initial={true} hideNavBar={true}></Scene>
+            {/*<Scene key='login' component={LoginScreenAvoidingView} initial={true} hideNavBar={true}></Scene> */}
           </Scene>
       </Router>
     );
