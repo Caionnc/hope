@@ -14,7 +14,7 @@ import hopelogo from '../images/hopelogo.png';
 
 //Changing Scene between Loading to Login afte a setted timeout
 const switchToLogin = () => {
-  Actions.replace('dashboard');
+  Actions.replace('login');
 };
 class LoadingScreen extends Component {
   state = {

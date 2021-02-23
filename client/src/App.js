@@ -16,10 +16,10 @@ class App extends Component {
     return (
       <Router>
           <Scene key='root'>
-            <Scene key='loading' component={LoadingScreen} initial={false} hideNavBar={true}></Scene>
+            <Scene key='loading' component={LoadingScreen} initial={true} hideNavBar={true}></Scene>
             <Scene key='login' component={LoginScreenAvoidingView} initial={false} hideNavBar={true}></Scene>
             <Scene key='register' component={RegisterScreen} initial={false} hideNavBar={true}></Scene>
-            <Scene key='dashoboard' component={DashboardScreen} initial={true} hideNavBar={true}></Scene>
+            <Scene key='dashboard' component={DashboardScreen} initial={false} hideNavBar={true}></Scene>
           </Scene>
       </Router>
     );
