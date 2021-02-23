@@ -6,8 +6,16 @@ import {
   Image
 } from 'react-native';
 
+import { Actions } from 'react-native-router-flux';
+
+//Logo Import
 import hopelogo from '../images/hopelogo.png';
 
+
+//Changing Scene between Loading to Login afte a setted timeout
+const switchToLogin = () => {
+  Actions.replace('login');
+};
 class LoadingScreen extends Component {
   state = {
     LogoAnim: new Animated.Value(0),
@@ -19,6 +27,8 @@ class LoadingScreen extends Component {
       duration: 3500,
       useNativeDriver: false,
     }).start();
+
+    setTimeout(switchToLogin, 3700)
   }
 
   render() {
