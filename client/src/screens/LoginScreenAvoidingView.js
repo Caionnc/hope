@@ -13,6 +13,8 @@ import {
 //Import de imagens
 import hopehandslogo from '../images/hopelhandslogo.png';
 
+import api from '../services/api';
+
 class LoginScreen extends Component {
   render() {
     return (
@@ -26,7 +28,7 @@ class LoginScreen extends Component {
                 style={styles.input}
                 placeholder="E-mail"
                 autoCorrect={false}
-                onChangeText={() => {}}></TextInput>
+                onChangeText={() => { }}></TextInput>
 
               <TextInput
                 style={styles.input}
