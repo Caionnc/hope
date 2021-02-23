@@ -23,6 +23,6 @@ Desafio de programação LAVID/FUZE.cc SELEÇÃO BOLSISTAS 2021;
 
 * Login Screen
 
-<img src="media/loginscreen2.png" alt="drawing" width="300"/>
+<img src="media/loginscreen2.png" alt="drawing" width="300"/>  ![Alt Text](https://media.giphy.com/media/VcQl0NaNrg7eFV8dJA/giphy.gif)
 
 
